@@ -1,0 +1,45 @@
+DATA:19/04/2022
+HORA: 16:00~18:00
+TIPO DE TAREFA: Estudar aulas
+DESCRICAO: Setando o ambiente de trabalho
+
+DATA:20/04/2022
+HORA: 16:00~18:00
+TIPO DE TAREFA: Estudar aulas
+DESCRICAO: Vendo exemplos de projetos
+
+DATA:21/04/2022
+HORA: 16:00~18:00
+TIPO DE TAREFA: Iniciando o projeto
+DESCRICAO:
+
+DATA:22/04/2022
+HORA: 8:30~11:00
+TIPO DE TAREFA: codificar módulo
+DESCRICAO: Criação do Banco de Dados
+
+DATA:22/04/2022
+HORA: 15:03~18:47
+TIPO DE TAREFA: codificar módulo
+DESCRICAO: Populando do Banco de Dados
+
+DATA:23/04/2022
+HORA: 9:00~13:00
+TIPO DE TAREFA: Estudar aulas
+DESCRICAO: Estudando a integraçao do back com o front
+
+DATA:23/04/2022
+HORA: 9:00~13:00
+TIPO DE TAREFA: Estudar aulas
+DESCRICAO: Estudando a integraçao do back com o front
+
+DATA:23/04/2022
+HORA: 14:00~18:12
+TIPO DE TAREFA: codificar módulo
+DESCRICAO: Codificando em dupla, integração do front-end com o back-end
+
+DATA:24/04/2022
+HORA: 15:00~23:30
+TIPO DE TAREFA: codificar módulo
+DESCRICAO: Finalizando o projeto
+
