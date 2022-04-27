@@ -1,38 +1,43 @@
-class Api::V1::MusicController < ApplicationController
-    def index
+# frozen_string_literal: true
+
+module Api
+  module V1
+    class MusicController < ApplicationController
+      def index
         musics = Music.all
         render json: musics, status: :ok
-    end
+      end
 
-    def order
+      def order
         musics = Music.order(:likes).reverse
         render json: musics, status: :ok
-    end
+      end
 
-    def show
+      def show
         music = Music.find(params[:id])
-        render json: music, status: :ok 
-    rescue StandardError
+        render json: music, status: :ok
+      rescue StandardError
         head(:not_found)
-    end
+      end
 
-    def create
+      def create
         music = Music.new(music_params)
         music.save!
         render json: music, status: 201
-    rescue StandardError
+      rescue StandardError
         head(:unprocessable_entity)
-    end
+      end
 
-    private
+      private
 
-    def music_params
+      def music_params
         params.require(:music).permit(
-            :name,
-            :likes,
-            :artist_id,
-            :genre_id
+          :name,
+          :likes,
+          :artist_id,
+          :genre_id
         )
+      end
     end
-
+  end
 end

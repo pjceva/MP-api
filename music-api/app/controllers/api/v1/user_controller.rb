@@ -1,31 +1,36 @@
-class Api::V1::UserController < ApplicationController
-    def index
+# frozen_string_literal: true
+
+module Api
+  module V1
+    class UserController < ApplicationController
+      def index
         users = User.all
         render json: users, status: :ok
-    end
+      end
 
-    def show
+      def show
         user = User.find(params[:id])
-        render json: user, status: :ok 
-    rescue StandardError
+        render json: user, status: :ok
+      rescue StandardError
         head(:not_found)
-    end
+      end
 
-    def create
+      def create
         user = User.new(user_params)
         user.save!
         render json: user, status: 201
-    rescue StandardError
+      rescue StandardError
         head(:unprocessable_entity)
-    end
+      end
 
-    private
+      private
 
-    def user_params
+      def user_params
         params.require(:user).permit(
-            :username,
-            :password
+          :username,
+          :password
         )
+      end
     end
-
+  end
 end
