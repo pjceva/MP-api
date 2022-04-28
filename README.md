@@ -10,6 +10,10 @@ se necessário, inicie o servidor com
 
 "sudo service postgresql start"
 
+e caso voce tenha uma versão mais recente do rails, é necessário ajustar a versão com o comando
+
+"rvm use ruby 2.7.4"
+
 depois com o terminal na pasta "music-api" chame o comando
 
 "bundle"
