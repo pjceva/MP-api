@@ -3,6 +3,7 @@ import Login from "../pages/LoginPage";
 import MusicPage from "../pages/MusicPage";
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
+import Recomendacao from "../pages/Recomendacoes";
 
 
 const Rotas = () =>{
@@ -19,6 +20,7 @@ const Rotas = () =>{
         <Routes>
             <Route exact path="/" element= {<Login/>}/>
             <Route exact path="/music" element= {<MusicPage music={music}/>}/>
+            <Route exact path="/recomendacao" element= {<Recomendacao/>}/>
 
         </Routes>
     );
