@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-
+    font-family: Arial, Helvetica, sans-serif;
     width: 60rem;
     display: flex;
     flex-direction: column;
@@ -15,26 +15,33 @@ export const Container = styled.section`
         margin: 0 auto;
     }
 
-    .login{
-        margin: 20px auto;
-        border-radius: 20px;
-        border: none;
-        width: 30rem;
-        height: 3rem;
-        padding: 0 1rem;
-        font-size: 1.5rem;
+    .form{
+        margin:auto auto;
         
     }
+    input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
-    button{
+    .button{
         margin: 20px auto;
         border-radius: 20px;
         border: none;
         width: 10rem;
         height: 3rem;
         font-size: 1rem;
-        background-color: lightgray;
-        
+        background-color: #FFF;
+    }
+
+    .button:hover{
+        background-color: #000;
+        color: #FFF;
     }
 
 
