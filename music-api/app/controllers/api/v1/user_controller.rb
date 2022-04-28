@@ -2,6 +2,7 @@
 
 module Api
   module V1
+    # Controller para a parte de usuários, implementa os métodos para os usuários no banco de dados
     class UserController < ApplicationController
       def index
         users = User.all

@@ -2,6 +2,7 @@
 
 module Api
   module V1
+    # Controller para a parte de música, implementa os métodos para as músicas no banco de dados
     class MusicController < ApplicationController
       def index
         musics = Music.all
