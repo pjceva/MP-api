@@ -13,7 +13,7 @@ Rails.application.routes.draw do
         get 'index', to: 'music#index'
         get 'order', to: 'music#order'
         get 'show/:id', to: 'music#show'
-        get 'favorites', to: 'music#favorites'
+        get 'favorites/:id', to: 'music#favorites'
       end
     end
   end

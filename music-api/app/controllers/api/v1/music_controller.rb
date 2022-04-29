@@ -15,7 +15,8 @@ module Api
       end
 
       def favorites
-        x = Like.select("music_id").where(user_id: 2)
+        # x = Like.select("music_id").where(user_id: 1) //certissimo
+        x = Like.select("music_id").where(user_id: params[:id])
         musics = Music.where(id: x)
         render json: musics, status: :ok
       end
