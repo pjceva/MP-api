@@ -3,12 +3,12 @@ import { Container } from "./styles";
 
 const Login = () => {
     return (
-        
+
             <Container>
                 <h1>Entrar com uma conta</h1>
                 <input class="login" placeholder="USERNAME"></input>
                 <input class="login" type="password" placeholder="PASSWORD"></input>
-                <button>LOGIN</button>
+                <button><Link to='/recomendacao'>ENTRAR</Link></button>
                 <h1>CRIAR UMA CONTA</h1>
                 <input class="login" placeholder="USERNAME"></input>
                 <input class="login" type="password" placeholder="PASSWORD"></input>
