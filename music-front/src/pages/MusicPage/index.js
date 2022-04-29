@@ -1,5 +1,5 @@
 import MusicCard from "../../components/MusicCard";
-import { Container } from "../LoginPage/styles";
+import { Container } from "./styles";
 
 const MusicPage = ({music}) => {
 

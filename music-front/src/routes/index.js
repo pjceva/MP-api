@@ -11,7 +11,7 @@ const Rotas = () =>{
     const [music, setMusic] = useState([]) 
 
     useEffect(()=>{
-        api.get('/music/order').then((response)=>{
+        api.get('/music').then((response)=>{
             setMusic(response.data);
         })
     }, [])

@@ -13,7 +13,7 @@ const HomePage = () => {
         <>
             <h1>HomePage</h1>
 
-            <p>{String(authenticated)}</p>
+            <p>Loged: {String(authenticated)}</p>
 
             <button onClick={handleLogout}>Logout</button>
         </>

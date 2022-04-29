@@ -22,7 +22,7 @@ const Login = () => {
         
             <Container>
                 <h1>Entrar com uma conta</h1>
-                <p>{String(authenticated)}</p>
+                <p>Loged: {String(authenticated)}</p>
                 <form className="form" onSubmit={handleSubmit}>
                         <label className="label">Username:</label>
                         <input 

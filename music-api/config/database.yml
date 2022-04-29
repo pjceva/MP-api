@@ -81,6 +81,3 @@ test:
 #
 production:
   <<: *default
-  database: music_api_production
-  username: music_api
-  password: <%= ENV["MUSIC_API_DATABASE_PASSWORD"] %>

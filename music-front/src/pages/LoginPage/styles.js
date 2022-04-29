@@ -42,6 +42,7 @@ export const Container = styled.section`
     .button:hover{
         background-color: #000;
         color: #FFF;
+        cursor: pointer;
     }
 
 
