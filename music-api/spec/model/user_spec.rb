@@ -32,5 +32,23 @@ RSpec.describe User, type: :model do
                 expect(build(:user, password:nil)).to be_invalid 
             end
         end
-    end    
+    end
+    describe 'password' do
+        context 'when user does not have password' do
+            it 'is not valid' do
+                expect(build(:user, password:nil)).to be_invalid 
+            end
+        end
+    end 
+    describe 'is_admin' do
+        context 'when fild is_admin is not equal to 1 or 0'
+        it 'is not valid' do
+            expect(build(:user, is_admin:5)).to be_invalid
+        end
+        context 'when fild is_admin is equal to 1 or 0'
+        it 'is valid' do 
+            expect(build(:user, is_admin:0)).to be_valid
+            expect(build(:user, is_admin:1)).to be_valid
+        end
+    end
 end

@@ -60,4 +60,3 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_25_004826) do
   add_foreign_key "musics", "artists"
   add_foreign_key "musics", "genres"
 end
-
