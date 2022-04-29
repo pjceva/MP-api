@@ -14,6 +14,12 @@ module Api
         render json: musics, status: :ok
       end
 
+      def favorites
+        x = Like.select("music_id").where(user_id: 2)
+        musics = Music.where(id: x)
+        render json: musics, status: :ok
+      end
+
       def show
         music = Music.find(params[:id])
         render json: music, status: :ok
