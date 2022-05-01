@@ -1,8 +1,15 @@
 FactoryBot.define do 
-    factory :music do 
-        name {'musica1'}
-        artist{build(:artist)}
-        genre{build(:genre)}
 
+    #sequence music :names do |n|
+     #   "musica teste #{n}"
+    #end
+
+    factory :music do 
+        #name {generate (:names)}
+        name {'musica1'}
+        artist {association :artist}
+        #artist{build(:artist)}
+        #genre{build(:genre)}
+        genre{association :genre}
     end
 end

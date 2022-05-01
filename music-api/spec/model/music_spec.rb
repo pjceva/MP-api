@@ -8,4 +8,17 @@ RSpec.describe Music, type: :model do
             end
         end
     end
+
+    describe 'music'do
+        context "when create a music" do
+            it 'is valid' do
+                #expect(create(:music, name:'musica1')).not_to eq(nil)
+                musica_teste = create(:music, name:'musica_teste')
+                expect(musica_teste).not_to eq(nil)
+                umaMusica = build(:music, name:'minha_musica')
+                p umaMusica
+                p musica_teste
+            end
+        end
+    end
 end
