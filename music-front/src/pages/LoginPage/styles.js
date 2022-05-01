@@ -26,6 +26,14 @@ export const Container = styled.section`
         
     }
 
+    form {
+        text-align: center;
+    }
+
+    .form-error {
+        color: red;
+    }
+
     button{
         margin: 20px auto;
         border-radius: 20px;
@@ -34,6 +42,7 @@ export const Container = styled.section`
         height: 3rem;
         font-size: 1rem;
         background-color: lightgray;
+        display: block;
         
     }
 
