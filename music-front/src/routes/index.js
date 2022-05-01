@@ -4,7 +4,12 @@ import MusicPage from "../pages/MusicPage";
 import HomePage from "../pages/HomePage"
 import { useContext, useEffect, useState } from "react";
 import { api } from "../services/api";
+AutenticaUser
 import { AuthProvider, AuthContext } from "../contexts/auth";  
+
+import Recomendacao from "../pages/Recomendacoes";
+
+main
 
 const Rotas = () =>{
 
@@ -16,12 +21,20 @@ const Rotas = () =>{
         })
     }, [])
 
+AutenticaUser
     const Private = ({children}) => {
         const { authenticated, loading } = useContext(AuthContext);
 
         if(loading) {
             return <div className="loading">Carregando...</div>
         }
+
+    return (
+        <Routes>
+            <Route exact path="/" element= {<Login/>}/>
+            <Route exact path="/music" element= {<MusicPage music={music}/>}/>
+            <Route exact path="/recomendacao" element= {<Recomendacao/>}/>
+main
 
         if(!authenticated) {
             return <Navigate to="/login"/>;

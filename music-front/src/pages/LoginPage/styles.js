@@ -29,13 +29,26 @@ export const Container = styled.section`
         box-sizing: border-box;
     }
 
+AutenticaUser
     .button{
+
+    form {
+        text-align: center;
+    }
+
+    .form-error {
+        color: red;
+    }
+
+    button{
+main
         margin: 20px auto;
         border-radius: 20px;
         border: none;
         width: 10rem;
         height: 3rem;
         font-size: 1rem;
+AutenticaUser
         background-color: #FFF;
     }
 
@@ -43,6 +56,11 @@ export const Container = styled.section`
         background-color: #000;
         color: #FFF;
         cursor: pointer;
+
+        background-color: lightgray;
+        display: block;
+        
+main
     }
 
 
