@@ -1,6 +1,8 @@
-import { createRoutesFromChildren, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Container } from "./styles";
 import React from "react";
+import { AuthContext } from "../../contexts/auth"
+import { useState, useContext } from 'react'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from "axios";
@@ -31,8 +33,8 @@ const SignupForm = () => {
                 password: values.password
             }
             axios.post('http://localhost:3000/api/v1/user/create', {user}).then(response => {
-                if (response.status == 201) {   
-                    window.location.href = 'http://localhost:2000/recomendacao'
+                if (response.status === 201) {   
+                    window.location.href = 'http://localhost:2000/'
                 }
                 else {
                     alert("Um erro ocorreu. Por favor, tente novamente mais tarde.")
@@ -76,17 +78,47 @@ const SignupForm = () => {
 }
 
 const Login = () => {
+    const { authenticated, login } = useContext(AuthContext);
+
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        login(username, password);
+
+        console.log('submit', {username, password});
+    }
+
     return (
 
             <Container>
                 <h1>Entrar com uma conta</h1>
-                <input class="login" placeholder="USERNAME"></input>
-                <input class="login" type="password" placeholder="PASSWORD"></input>
-                <button><Link to='/recomendacao'>ENTRAR</Link></button>
+                <p>Loged: {String(authenticated)}</p>
+                <form className="form" onSubmit={handleSubmit}>
+                        
+                        <input className="login"
+                            type="text"
+                            placeholder="username" 
+                            value={username} 
+                            onChange={(e) => setUsername(e.target.value)}
+                        />
+
+                        
+                        <input className="login"    
+                            type="password"
+                            placeholder="password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+
+                        <button className="button" type="submit">Entrar</button>
+                </form>
                 <h1>Criar uma conta</h1> 
                 <SignupForm/>
                 <h1>Entrar sem conta</h1>
-                <button><Link to='/music'>CONVIDADO</Link></button>             
+                <button><Link to='/music'>CONVIDADO</Link></button>                
             </Container>
     );
 }
