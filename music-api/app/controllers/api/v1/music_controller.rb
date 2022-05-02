@@ -14,6 +14,59 @@ module Api
         render json: musics, status: :ok
       end
 
+      def artist 
+        artists = Music.order(:artist_id)
+        render json: artists, status: :ok
+
+      end
+
+      def genre
+        genero = Music.order(:genre_id)
+        render json: genero, status: :ok
+      end
+
+      def recomendacao
+        x = Like.select("music_id").where(user_id: params[:id])
+        musics = Music.where(id: x)
+        i = 0
+        listaArtista = []
+
+        for i in 0...(x.size) do
+          listaArtista.append(musics[i].genre_id)
+        end
+
+        y = listaArtista.max_by { |i| listaArtista.count(i) }
+
+        recomend = Music.where(genre_id: y)
+
+        render json: recomend, status: :ok
+        
+      end
+
+      # def recomendacaoG
+      #   x = Like.select("music_id").where(user_id: params[:id])
+      #   musics = Music.where(id: x)
+      #   i = 0
+      #   listaGenero = []
+
+      #   for i in 0...(x.size) do
+      #     listaGenero.append(musics[i].genre_id)
+      #   end
+
+      #   y = listaGenero.max_by { |i| listaGenero.count(i) }
+
+      #   recomend = Music.where(genre_id: y)
+
+      #   render json: recomend, status: :ok
+        
+      # end
+
+      def favorites
+        x = Like.select("music_id").where(user_id: params[:id])
+        musics = Music.where(id: x)
+        render json: musics, status: :ok
+      end
+
       def show
         music = Music.find(params[:id])
         render json: music, status: :ok

@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const Background = styled.section`
+
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: row;
+
+`
+
 export const Container = styled.section`
 
     width: 60rem;

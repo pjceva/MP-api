@@ -1,22 +1,22 @@
 import MusicCard from "../../components/MusicCard";
 import SideBar from "../../components/SideBar";
-import { Container } from "../LoginPage/styles";
-import { Background } from "./styles";
+import { Background, Container } from "./styles";
 
-const MusicPage = ({music}) => {
 
+const Recomendation = ({recomends}) =>{
     return (
+
         <Background>
-        <SideBar/>
-        <Container>
-            <h1>Recomendações</h1>
-            {music.map((item, index) => (
+            <SideBar/>
+            <Container>
+                <h1>Artistas</h1>
+                {recomends.map((item, index) => (
                 <MusicCard key={index} index={index} name={item.name} likes={item.likes} mainartist={item.mainartist}/>
             ))}
-            
-        </Container>
+            </Container>
         </Background>
+
     );
 }
 
-export default MusicPage;
+export default Recomendation;

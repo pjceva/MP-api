@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/model/artist_spec.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/model/artist_spec.rb": {
         "lines": [
           1,
           null,
@@ -32,7 +32,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/rails_helper.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/rails_helper.rb": {
         "lines": [
           null,
           null,
@@ -102,7 +102,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/config/environment.rb": {
+      "/home/pze/TrabalhoMP/music-api/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -113,7 +113,7 @@
           1
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/config/application.rb": {
+      "/home/pze/TrabalhoMP/music-api/config/application.rb": {
         "lines": [
           null,
           null,
@@ -146,7 +146,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/config/boot.rb": {
+      "/home/pze/TrabalhoMP/music-api/config/boot.rb": {
         "lines": [
           null,
           null,
@@ -156,7 +156,7 @@
           1
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/config/environments/test.rb": {
+      "/home/pze/TrabalhoMP/music-api/config/environments/test.rb": {
         "lines": [
           null,
           null,
@@ -222,7 +222,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/config/initializers/cors.rb": {
+      "/home/pze/TrabalhoMP/music-api/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -244,7 +244,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/config/initializers/filter_parameter_logging.rb": {
+      "/home/pze/TrabalhoMP/music-api/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -258,7 +258,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/config/initializers/inflections.rb": {
+      "/home/pze/TrabalhoMP/music-api/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -279,7 +279,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/factories/artist.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/factories/artist.rb": {
         "lines": [
           1,
           1,
@@ -292,7 +292,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/factories/genre.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/factories/genre.rb": {
         "lines": [
           1,
           1,
@@ -301,7 +301,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/factories/like.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/factories/like.rb": {
         "lines": [
           1,
           1,
@@ -329,7 +329,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/factories/music.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/factories/music.rb": {
         "lines": [
           1,
           null,
@@ -348,7 +348,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/factories/user.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/factories/user.rb": {
         "lines": [
           1,
           1,
@@ -361,7 +361,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/config/routes.rb": {
+      "/home/pze/TrabalhoMP/music-api/config/routes.rb": {
         "lines": [
           null,
           null,
@@ -392,13 +392,14 @@
           1,
           1,
           1,
+          1,
           null,
           null,
           null,
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/support/factory_bot.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/support/factory_bot.rb": {
         "lines": [
           null,
           null,
@@ -407,66 +408,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/models/artist.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/models/application_record.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/model/genre_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/models/genre.rb": {
+      "/home/pze/TrabalhoMP/music-api/app/models/artist.rb": {
         "lines": [
           null,
           null,
@@ -477,16 +419,45 @@
           null,
           null,
           null,
+          null,
+          null,
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/model/like_spec.rb": {
+      "/home/pze/TrabalhoMP/music-api/app/models/application_record.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/pze/TrabalhoMP/music-api/spec/model/genre_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
           1,
           1,
           null,
@@ -496,17 +467,21 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/models/like.rb": {
+      "/home/pze/TrabalhoMP/music-api/app/models/genre.rb": {
         "lines": [
           null,
           null,
           1,
           1,
           1,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/model/music_spec.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/model/like_spec.rb": {
         "lines": [
           1,
           null,
@@ -519,6 +494,32 @@
           null,
           null,
           null,
+          null
+        ]
+      },
+      "/home/pze/TrabalhoMP/music-api/app/models/like.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/pze/TrabalhoMP/music-api/spec/model/music_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
           1,
           1,
           1,
@@ -534,7 +535,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/models/music.rb": {
+      "/home/pze/TrabalhoMP/music-api/app/models/music.rb": {
         "lines": [
           null,
           null,
@@ -549,7 +550,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/model/user_spec.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/model/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -607,7 +608,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/models/user.rb": {
+      "/home/pze/TrabalhoMP/music-api/app/models/user.rb": {
         "lines": [
           null,
           null,
@@ -615,11 +616,11 @@
           1,
           1,
           1,
-          1,
+          null,
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/requests/api/v1/musics_spec.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/requests/api/v1/musics_spec.rb": {
         "lines": [
           1,
           null,
@@ -706,7 +707,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/controllers/api/v1/music_controller.rb": {
+      "/home/pze/TrabalhoMP/music-api/app/controllers/api/v1/music_controller.rb": {
         "lines": [
           null,
           null,
@@ -720,6 +721,13 @@
           null,
           null,
           1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          0,
           0,
           0,
           null,
@@ -754,7 +762,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/controllers/application_controller.rb": {
+      "/home/pze/TrabalhoMP/music-api/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null,
@@ -797,7 +805,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/spec/requests/api/v1/users_spec.rb": {
+      "/home/pze/TrabalhoMP/music-api/spec/requests/api/v1/users_spec.rb": {
         "lines": [
           1,
           null,
@@ -866,7 +874,7 @@
           null
         ]
       },
-      "/mnt/d/Gabriel/Documents/Documentos_de_verdade/2-2021/MP/Outro_projeto/TrabalhoMP/music-api/app/controllers/api/v1/user_controller.rb": {
+      "/home/pze/TrabalhoMP/music-api/app/controllers/api/v1/user_controller.rb": {
         "lines": [
           null,
           null,
@@ -908,6 +916,6 @@
         ]
       }
     },
-    "timestamp": 1651461227
+    "timestamp": 1651499107
   }
 }

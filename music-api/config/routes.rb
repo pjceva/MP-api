@@ -24,8 +24,13 @@ Rails.application.routes.draw do
       scope 'music' do
         get 'index', to: 'music#index'
         get 'order', to: 'music#order'
+        get 'artist', to: 'music#artist'
+        get 'genre', to: 'music#genre'
+        get 'recomendacao/:id', to: 'music#recomendacao'
+        get 'recomendacaoG/:id', to: 'music#recomendacaoG'
         get 'show/:id', to: 'music#show'
         post 'create', to: 'music#create'
+        get 'favorites/:id', to: 'music#favorites'
       end
     end
   end
