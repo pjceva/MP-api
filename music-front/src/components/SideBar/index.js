@@ -16,9 +16,9 @@ const SideBar = () =>{
             <h2>Bem vindo!</h2>
             <p>Loged: {String(authenticated)}</p>
             <button onClick={handleLogout}>Logout</button>
-            <p><Link to='/music'>CURTIDAS</Link></p>
+            <p><Link to='/'>MINHAS CURTIDAS</Link></p>
             <p><Link to='/music'>FAVORITAS</Link></p>
-            <p>GENEROS</p>
+            <p><Link to='/genres'>GENEROS</Link></p>
             <p><Link to='/artistas'>ARTISTAS</Link></p>
         </Container>
         

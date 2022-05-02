@@ -3,14 +3,14 @@ import SideBar from "../../components/SideBar";
 import { Background, Container } from "./styles";
 
 
-const Artistas = ({artists}) =>{
+const Generos = ({genres}) =>{
     return (
 
         <Background>
             <SideBar/>
             <Container>
-                <h1>Artistas</h1>
-                {artists.map((item, index) => (
+                <h1>Generos</h1>
+                {genres.map((item, index) => (
                 <MusicCard key={index} index={index} name={item.name} likes={item.likes} mainartist={item.mainartist}/>
             ))}
             </Container>
@@ -19,4 +19,4 @@ const Artistas = ({artists}) =>{
     );
 }
 
-export default Artistas;
+export default Generos;

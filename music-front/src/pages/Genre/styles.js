@@ -17,5 +17,10 @@ export const Container = styled.section`
     margin: 3rem auto;
     border-radius: 50px;
     background-color: lightgreen; 
-    
-`;
+
+    h1{
+        font-size: 50px;
+        margin: 0 auto;
+    }
+
+`

@@ -6,12 +6,12 @@ import { api } from "../services/api";
 import Recomendacao from "../pages/Recomendacoes";
 import { AuthProvider, AuthContext } from "../contexts/auth";  
 import Artistas from "../pages/Artistas";
+import Generos from "../pages/Genre";
 
 
 const Rotas = () =>{
 
     const userid = localStorage.getItem("id")
-    const x = JSON.parse(userid)
     console.log(userid)
 
     const [music, setMusic] = useState([]) 
@@ -27,6 +27,22 @@ const Rotas = () =>{
     useEffect(()=>{
         api.get(`/api/v1/music/favorites/${userid}`).then((response)=>{
             setLiked(response.data);
+        })
+    }, [])
+
+    const [artists, setArtist] = useState([]) 
+
+    useEffect(()=>{
+        api.get(`/api/v1/music/artist`).then((response)=>{
+            setArtist(response.data);
+        })
+    }, [])
+
+    const [genres, setGenre] = useState([]) 
+
+    useEffect(()=>{
+        api.get(`/api/v1/music/genre`).then((response)=>{
+            setGenre(response.data);
         })
     }, [])
 
@@ -49,7 +65,8 @@ const Rotas = () =>{
                 <Route exact path="/login" element= {<Login/>}/>
                 <Route exact path="/" element= {<Private><Recomendacao liked={liked}/></Private>}/>
                 <Route exact path="/music" element= {<MusicPage music={music}/>}/>
-                <Route exact path="/artistas" element= {<Artistas/>}/>
+                <Route exact path="/artistas" element= {<Private><Artistas artists={artists}/></Private>}/>
+                <Route exact path="/genres" element= {<Private><Generos genres={genres}/></Private>}/>
             </Routes>
         </AuthProvider>
     );
