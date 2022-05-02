@@ -1,0 +1,30 @@
+19/04/2022:
+	18:00 - 19:48: Setando ambiente de programação: Instalação de programas no Linux;
+
+22/04/2022:
+	9:12 - 11:43: Confexão do Banco de Dados: Modulação;
+	
+25/04/2022:
+	16:00 - 21:31: Estudos: Assistindo aula e estudando requisitos e linguagens para o projeto;
+
+26/04/2022:
+	9:03 - 13:54: Estudo para programar: Vendo vídeos e documentações para desenvolvimento do back-end em ruby on rails;
+	18:13 - 23:20: Implementação: Criação de controllers adicionais, models e alterações no banco de dados;
+
+27/04/2022:
+	8:57 - 13:45: Estudo para programar: Vendo vídeos e documnetações para desenvolvimento do front-end em React;
+	19:00 - 23:48: Implementação: Preparação do front-end para a implementação da autenticação de usuário;
+
+28/04/2022:
+	14:34 - 22:14: Estudo e Implementação: Estudando e implementando novos módulos para autenticação de usuário (Novas bibliotecas, controllers, routes e teste de requisição do banco de dados);
+
+29/04/2022:
+	9:11 - 11:59: Ajustes finais autenticação de usuário: Parte final para integração entre back-end e front-end da autenticação de usuário;
+	14:35 - 20:29: Implementação e ajustes pré merge: Aprimoramentos no front-end, melhoras nas routes, correção de bugs e ajustes para evitar conflitos na merge;
+
+01/05/2022:
+	08:21 - 09:23: Ajustes com Github: Resolvendo conflitos e problemas gerados com o Github;
+	14:23 - 20:40: Implementação e estudo para recomendação: Setando ambiente para recomendações das músicas. Dificuldades com manipulação do banco de dados;
+
+02/05/2022:
+	08:02 - 12:27: Finalização do Programa: Finalização das recomendações, ajustes finais e correção de pequenos bugs;
