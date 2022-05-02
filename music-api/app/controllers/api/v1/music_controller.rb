@@ -32,34 +32,34 @@ module Api
         listaArtista = []
 
         for i in 0...(x.size) do
-          listaArtista.append(musics[i].artist_id)
+          listaArtista.append(musics[i].genre_id)
         end
 
         y = listaArtista.max_by { |i| listaArtista.count(i) }
-
-        recomend = Music.where(artist_id: y)
-
-        render json: recomend, status: :ok
-        
-      end
-
-      def recomendacaoG
-        x = Like.select("music_id").where(user_id: params[:id])
-        musics = Music.where(id: x)
-        i = 0
-        listaGenero = []
-
-        for i in 0...(x.size) do
-          listaGenero.append(musics[i].genre_id)
-        end
-
-        y = listaGenero.max_by { |i| listaGenero.count(i) }
 
         recomend = Music.where(genre_id: y)
 
         render json: recomend, status: :ok
         
       end
+
+      # def recomendacaoG
+      #   x = Like.select("music_id").where(user_id: params[:id])
+      #   musics = Music.where(id: x)
+      #   i = 0
+      #   listaGenero = []
+
+      #   for i in 0...(x.size) do
+      #     listaGenero.append(musics[i].genre_id)
+      #   end
+
+      #   y = listaGenero.max_by { |i| listaGenero.count(i) }
+
+      #   recomend = Music.where(genre_id: y)
+
+      #   render json: recomend, status: :ok
+        
+      # end
 
       def favorites
         x = Like.select("music_id").where(user_id: params[:id])
