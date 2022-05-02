@@ -1,0 +1,36 @@
+DATA:19/04/2022
+HORA: 16:00~18:00
+TIPO DE TAREFA: Estudar aulas
+DESCRICAO: Setando o ambiente de trabalho
+
+DATA:26/04/2022
+HORA: 22:00 às 02:30
+TIPO DE TAREFA: assistir aulas
+DESCRIÇÃO: Estudando ferramenta de testes Rspec e FactoryBot
+
+DATA:27/04/2022
+HORA: 12:00 às 18:00
+TIPO DE TAREFA: assistir aulas, configurar ambiente, codificar testes
+DESCRIÇÃO: Configurando ambiente de trabalho e estudando exemplo de casos de teste feitos com a ferramenta Rspec e FactoryBot, primeiros casos de teste para a model User
+
+DATA:28/04/2022
+HORA: 01:00 às 04:15
+TIPO DE TAREFA: codificar testes
+DESCRICAO: implementação teste de unicidade do username para a model user 
+
+DATA:29/04/2022
+HORA: 00:20 às 04:00
+TIPO DE TAREFA: codificar testes
+DESCRICAO: implementação de casos de testes para as demais models 
+
+DATA:30/04/2022
+HORA: 00:00 às 04:00
+TIPO DE TAREFA: codificar testes
+DESCRICAO: ajustes entre os relacionamentos das models e casos de teste para a controller music 
+
+DATA:01/05/2022
+HORA: 00:00 às 04:00
+TIPO DE TAREFA: codificar testes
+DESCRICAO: implementação de casos de teste para a controller users, ajustes na controller music e adição da rota para o método create da controller music 
+ 
+
