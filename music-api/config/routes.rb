@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   post '/login', to: 'user#login'
   get '/auto_login', to: 'user#auto_login'
 
-
   scope 'music' do
     get 'index', to: 'music#index'
     get 'order', to: 'music#order'
