@@ -9,11 +9,23 @@ import { AuthProvider, AuthContext } from "../contexts/auth";
 
 const Rotas = () =>{
 
+    const userid = localStorage.getItem("id")
+    const x = JSON.parse(userid)
+    console.log(userid)
+
     const [music, setMusic] = useState([]) 
 
     useEffect(()=>{
-        api.get('/music').then((response)=>{
+        api.get('/api/v1/music/order').then((response)=>{
             setMusic(response.data);
+        })
+    }, [])
+
+    const [liked, setLiked] = useState([]) 
+
+    useEffect(()=>{
+        api.get(`/api/v1/music/favorites/${userid}`).then((response)=>{
+            setLiked(response.data);
         })
     }, [])
 
@@ -34,7 +46,7 @@ const Rotas = () =>{
         <AuthProvider>
             <Routes>
                 <Route exact path="/login" element= {<Login/>}/>
-                <Route exact path="/" element= {<Private><Recomendacao/></Private>}/>
+                <Route exact path="/" element= {<Private><Recomendacao liked={liked}/></Private>}/>
                 <Route exact path="/music" element= {<MusicPage music={music}/>}/>
             </Routes>
         </AuthProvider>

@@ -30,8 +30,10 @@ export const AuthProvider = ({children}) => {
 
         const loggedUser = response.data.user;
         const token = response.data.token;
+        const userId = response.data.user.id;
         
         localStorage.setItem("user", JSON.stringify(loggedUser))
+        localStorage.setItem("id", JSON.stringify(userId))
         localStorage.setItem("token", token)
 
         api.defaults.headers.Authorization = `Bearer ${token}`;
@@ -48,7 +50,7 @@ export const AuthProvider = ({children}) => {
 
         localStorage.removeItem("token");
         api.defaults.headers.Authorization = null;
-
+        
         setUser(null);
         navigate("/login");
     }

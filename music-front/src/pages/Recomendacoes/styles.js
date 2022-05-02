@@ -33,7 +33,7 @@ export const SideBar = styled.section`
     border-radius: 20px;
     text-align: center;
 
-    max-height: 27rem;
+    max-height: 31rem;
 
     h2{
         font-size: 30px;
