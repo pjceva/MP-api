@@ -16,8 +16,8 @@ RSpec.describe Music, type: :model do
                 musica_teste = create(:music, name:'musica_teste')
                 expect(musica_teste).not_to eq(nil)
                 umaMusica = build(:music, name:'minha_musica')
-                p umaMusica
-                p musica_teste
+                #p umaMusica
+                #p musica_teste
             end
         end
     end

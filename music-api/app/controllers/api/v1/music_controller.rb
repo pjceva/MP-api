@@ -30,8 +30,10 @@ class Api::V1::MusicController < ApplicationController
         params.require(:music).permit(
             :name,
             :likes,
-            :artist_id,
-            :genre_id
+            #:artist_id,
+            #:genre_id
+            :artist,
+            :genre
         )
     end
 

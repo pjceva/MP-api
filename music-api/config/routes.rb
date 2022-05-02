@@ -12,6 +12,7 @@ Rails.application.routes.draw do
         get 'index', to: 'music#index'
         get 'order', to: 'music#order'
         get 'show/:id', to: 'music#show'
+        post 'create', to: 'music#create'
         
       end
     end

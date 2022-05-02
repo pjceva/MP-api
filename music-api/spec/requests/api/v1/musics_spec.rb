@@ -5,7 +5,8 @@ RSpec.describe Api::V1::MusicController, type: :request do
     context 'GET #Index' do 
         before do
             create(:music, name:'musica1')
-            #create(:music, name:'musica3') preciso aumentar numero de amostras
+            #create(:music, name:'musica3') 
+            #preciso aumentar numero de amostras
             get '/api/v1/music/index'
         end
         it 'should show success status and render all musics' do 
@@ -14,10 +15,7 @@ RSpec.describe Api::V1::MusicController, type: :request do
             expect(response).to have_http_status(:success)
         end
 
-        it 'returns with json' do
-            #get '/api/v1/music/index'
-            expect(response.content_type).to eq('application/json; charset=utf-8')
-        end
+        
     end
     describe 'GET #Show' do
          let(:musica) {create(:music)}
@@ -35,9 +33,34 @@ RSpec.describe Api::V1::MusicController, type: :request do
                 get "/api/v1/music/show/:#{musica.id}"
             end
            it {expect(response).to have_http_status(:not_found)}
-              
+           
+           it 'does not returns with json' do
+            #get '/api/v1/music/index'
+            expect(response.content_type).not_to eq('application/json; charset=utf-8')
           end
+        end
        end
+   end
+
+   describe 'POST/Create' do
+    let (:params) do
+        {
+        name: "Musica teste",
+        likes: 10,
+        artist: "Artista teste",
+        genre: "Genero teste"
+        }
+    end
+    context 'with valid params' do
+        before do
+            p params
+            post "/api/v1/music/create", params: { music: params}
+        end
+        it 'return a success response 'do
+            #expect(response).to have_http_status(:created)
+        end
+    end
+
    end
 end
 =begin
