@@ -20,6 +20,7 @@ const SideBar = () =>{
             <p><Link to='/music'>FAVORITAS</Link></p>
             <p><Link to='/genres'>GENEROS</Link></p>
             <p><Link to='/artistas'>ARTISTAS</Link></p>
+            <p><Link to='/recomendation'>RECOMENDACOES</Link></p>
         </Container>
         
     );

@@ -7,6 +7,7 @@ import Recomendacao from "../pages/Recomendacoes";
 import { AuthProvider, AuthContext } from "../contexts/auth";  
 import Artistas from "../pages/Artistas";
 import Generos from "../pages/Genre";
+import Recomendation from "../pages/Recomendation";
 
 
 const Rotas = () =>{
@@ -45,6 +46,13 @@ const Rotas = () =>{
             setGenre(response.data);
         })
     }, [])
+    const [recomends, setRecomends] = useState([]) 
+
+    useEffect(()=>{
+        api.get(`/api/v1/music/recomendacao/${userid}`).then((response)=>{
+            setRecomends(response.data);
+        })
+    }, [])
 
     const Private = ({children}) => {
         const { authenticated, loading } = useContext(AuthContext);
@@ -67,6 +75,7 @@ const Rotas = () =>{
                 <Route exact path="/music" element= {<MusicPage music={music}/>}/>
                 <Route exact path="/artistas" element= {<Private><Artistas artists={artists}/></Private>}/>
                 <Route exact path="/genres" element= {<Private><Generos genres={genres}/></Private>}/>
+                <Route exact path="/recomendation" element= {<Private><Recomendation recomends={recomends}/></Private>}/>
             </Routes>
         </AuthProvider>
     );

@@ -8,7 +8,7 @@ export const Container = styled.section`
     border-radius: 20px;
     text-align: center;
 
-    max-height: 31rem;
+    max-height: 33rem;
 
     h2{
         font-size: 30px;
