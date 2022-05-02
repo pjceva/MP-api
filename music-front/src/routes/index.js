@@ -5,6 +5,7 @@ import { useEffect, useState, useContext } from "react";
 import { api } from "../services/api";
 import Recomendacao from "../pages/Recomendacoes";
 import { AuthProvider, AuthContext } from "../contexts/auth";  
+import Artistas from "../pages/Artistas";
 
 
 const Rotas = () =>{
@@ -48,6 +49,7 @@ const Rotas = () =>{
                 <Route exact path="/login" element= {<Login/>}/>
                 <Route exact path="/" element= {<Private><Recomendacao liked={liked}/></Private>}/>
                 <Route exact path="/music" element= {<MusicPage music={music}/>}/>
+                <Route exact path="/artistas" element= {<Artistas/>}/>
             </Routes>
         </AuthProvider>
     );
