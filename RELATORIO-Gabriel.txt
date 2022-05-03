@@ -43,3 +43,17 @@ HORA: 15:00~23:30
 TIPO DE TAREFA: codificar módulo
 DESCRICAO: Finalizando o projeto
 
+DATA:25/04/2022
+HORA: 18:00~23:30
+TIPO DE TAREFA: Estudar aulas
+DESCRICAO: Procurando gems
+
+DATA:29/04/2022
+HORA: 18:00~23:30
+TIPO DE TAREFA: Estudar aulas
+DESCRICAO: Estudando o rails
+
+DATA:30/04/2022
+HORA: 18:00~23:30
+TIPO DE TAREFA: Estudar aulas
+DESCRICAO: Estudando react
