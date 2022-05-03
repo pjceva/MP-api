@@ -7,5 +7,13 @@
 22-04-2022 | 15:03 - 18:47 | codificar módulo | Populando o Banco de Dados
 23-04-2022 | 8:15 - 12:54 | codificar módulo | Criação das Controllers
 23-04-2022 | 14:01 - 18:12 | codificar módulo | Codificando em dupla, integração do front-end com o back-end
-24-04-2022 | 7:22 - 13:07 | codificar módulo | Alterações no banco de dados e nas controllers, criação de páginas no front-end
+24-04-2022 | 7:22 - 13:07 | gerenciar a construção do software  | Alterações no banco de dados e nas controllers, criação de páginas no front-end
 24-04-2022 | 14:58 - 23:20 | codificar módulo | Criação de métodos no back-end, criação de componentes no front-end, integração do back com o front
+26-04-2022 | 20:02 - 22:11 | codificar módulo | Criando paginas de recomendacoes no front-end
+27-04-2022 | 10:03 - 12:54 | codificar módulo | Criando controller de musicas favoritas no back-end
+28-04-2022 | 14:01 - 16:12 | codificar módulo | Integrando metodo do back-end com o front-end
+29-04-2022 | 16:20 - 18:03 | codificar módulo | Configurando Rotas no front-end
+30-04-2022 | 9:12 - 11:30 | revisar código do módulo | Ajustando paginas no front-end
+02-05-2022 | 10:22 - 14:58 | gerenciar a construção do software  | Criando metodo para recomendacao por genero no back-end
+02-05-2022 | 14:58 - 15:49 | gerenciar a construção do software  | Criando metodo para recomendacao por artista no back-end
+
